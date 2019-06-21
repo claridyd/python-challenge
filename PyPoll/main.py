@@ -30,8 +30,30 @@ with open(electiondata_csv, newline="", encoding='utf-8') as csvfile:
 
         # Add Candidate
         Candidate.append(row[2])
-
+# Get total votes
 votecount = len(VoterId)
 
 print("Total Votes: " + str(votecount))   
+
+# Get unique candidate names
+c_list = list(set(Candidate))
+#print(c_list)
+for word in c_list:
+    print(word)
+
+# Variable to hold candidate count
+c_total = []
+
+# Calcuate percentage
+# c_percent = ((c_total / votecount)*100)
+
+#for c_total in c_list:
+#    VoterId.append(row[0])   
+#print(c_total)
+
+
+
+
+
+
 
