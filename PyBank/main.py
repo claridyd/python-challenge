@@ -59,12 +59,21 @@ minpos = new_profit_loss.index(min(new_profit_loss))
 #print(minpos)
 
 maxpos = new_profit_loss.index(max(new_profit_loss))
-#print(maxpos)
-
-
-#print(month[minpos])
-#print(month[maxpos])
 
 print("Greatest Increase in profits: " + month[maxpos] + " " + "($" + str(Maxprof)+ ")")
 print("Greatest Decrease in Profits: " + month[minpos] + " " + "($" + str(Minprof) + ")")
 
+# save the output file path
+output_file = os.path.join("c:/", "Users","clari", "BootcampHomework","python-challenge", 
+ "PyBank", "PyBankoutput.txt")
+
+ # open the file and write to csv
+with open(output_file, "w") as f:
+    #writer =csv.writer(datafile)
+    f.write("Financial Analysis" + "\n")
+    f.write("------------------" + "\n")
+    f.write("Total Months: " + str(month_count) + "\n")
+    f.write("Total:  $" + str(total_profit_loss) + "\n")
+    f.write("Average Change:  $" + str(Average) + "\n")
+    f.write("Greatest Increase in profits: " + month[maxpos] + " " + "($" + str(Maxprof)+ ")" + "\n")
+    f.write("Greatest Decrease in Profits: " + month[minpos] + " " + "($" + str(Minprof) + ")" + "\n")
