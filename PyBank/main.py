@@ -1,6 +1,6 @@
 # Py Me Up Charlie
 # Python Homework
-#
+# PyBank
 
 import os
 import csv
@@ -34,9 +34,11 @@ with open(budgetdata_csv, newline="", encoding='utf-8') as csvfile:
 
 #print(month_count)
 month_count = len(month)
-print('-------------------------')
+print("Financial Analysis")
+print("-------------------------")
+
 print("Total Months: " + str(month_count))
-#print('-------------------------')
+
 new_profit_loss = list(map(int, profit_loss))
 #print(new_profit_loss)
 
@@ -63,6 +65,6 @@ maxpos = new_profit_loss.index(max(new_profit_loss))
 #print(month[minpos])
 #print(month[maxpos])
 
-print("Greatest Increase in profits: " + month[maxpos] + " " + str(Maxprof))
-print("Greatest Decrease in Profits: " + month[minpos] + " " + str(Minprof))
+print("Greatest Increase in profits: " + month[maxpos] + " " + "($" + str(Maxprof)+ ")")
+print("Greatest Decrease in Profits: " + month[minpos] + " " + "($" + str(Minprof) + ")")
 
