@@ -35,25 +35,12 @@ votecount = len(VoterId)
 
 print("Total Votes: " + str(votecount))   
 
-# Get unique candidate names
-c_list = list(set(Candidate))
-#print(c_list)
-for word in c_list:
-    print(word)
+#can_list = []
+#for x in Candidate(row[2]):
+#    if x == 'Li':
+#        can_list.append(x)
 
-# Variable to hold candidate count
-c_total = []
-
-# Calcuate percentage
-# c_percent = ((c_total / votecount)*100)
-
-#for c_total in c_list:
-#    VoterId.append(row[0])   
-#print(c_total)
-
-
-
-
+# can_count = len(can_list)
 
 
 
