@@ -6,8 +6,7 @@ import os
 import csv
 
 # Set path for file
-budgetdata_csv = os.path.join("c:/", "DataVisual","UCFLM20190409DATA", "Homework","03-Python", 
- "Instructions", "PyBank", "Resources", "budget_data.csv")
+budgetdata_csv = os.path.join("budget_data.csv")
 
 # Lists to store data
 month = []
